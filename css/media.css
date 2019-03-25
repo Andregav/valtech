@@ -57,8 +57,32 @@
 @media only screen and (max-device-width: 1024px) {}
 
 @media only screen and (max-device-width: 960px) {
+    header {
+        margin-top: 50px;
+        margin-bottom: 90px;
+    }
+
     .sticky .header_logo {
         padding-left: 20px;
+    }
+}
+
+@media only screen and (max-device-width: 855px) {
+    header {
+        margin-top: 30px;
+    }
+
+    .title-line:after {
+        top: -12.5px;
+        border-bottom: 1px solid #c2c2c2;
+    }
+
+    .jumbotron_text {
+        margin-bottom: 30px;
+    }
+
+    .ourteam_img {
+        margin-right: 15px;
     }
 }
 
@@ -108,10 +132,6 @@
     .ourteam_img {
         margin-right: 15px;
     }
-
-    .title-line:after {
-        top: -12.5px;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -149,16 +169,13 @@
 
     .main-nav {
         margin: 0;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
     }
 
     .main-nav .header_qian {
         display: block;
-    }
-
-    .main-nav {
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
     }
 
     .main-nav a:not(:last-child) {
@@ -199,18 +216,22 @@
 }
 
 @media screen and (max-width: 736px) {
-    .title-line:after {
-        top: -12.4px;
+    header {
+        margin-bottom: 55px;
     }
 
-    .title-line:after {
-        border-bottom: 1px solid #c2c2c2;
+    .main-nav {
+        margin-top: 10px;
     }
 }
 
 @media screen and (max-width: 732px) {}
 
 @media screen and (max-width: 668px) {
+    .jumbotron_title {
+        margin-bottom: 30px;
+    }
+
     .clients_wrap {
         height: auto;
         margin-bottom: 50px;
@@ -235,6 +256,10 @@
 }
 
 @media screen and (max-width: 640px) {
+    .jumbotron_text {
+        line-height: 30px;
+    }
+
     .ourteam_img {
         -webkit-box-flex: 0;
         -ms-flex: none;
@@ -258,16 +283,16 @@
 @media screen and (max-width: 580px) {}
 
 @media screen and (max-width: 568px) {
+    header {
+        margin-bottom: 35px;
+    }
+
     .header_logo {
         margin-left: 20px;
     }
-
-    .main-nav {
-        margin-top: 10px;
-    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 534px) {
     .header {
         height: auto;
     }
@@ -288,26 +313,8 @@
     }
 
     .sticky .header_qian {
-        top: -25px;
-    }
-
-    .jumbotron_title {
-        font-size: 6vw;
-    }
-
-    .jumbotron_text {
-        font-size: 4vw;
-    }
-
-    .services_title,
-    .clients_title,
-    .ourteam_title {
-        width: 50vw;
-        text-align: center;
-    }
-
-    .clients_item {
-        width: 100%;
+        position: fixed;
+        top: 12px;
     }
 
     .ourteam_title-wrap {
@@ -332,6 +339,31 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        margin-bottom: 55px;
+    }
+
+    .jumbotron_title {
+        font-size: 6vw;
+    }
+
+    .jumbotron_text {
+        font-size: 4vw;
+    }
+
+    .services_title,
+    .clients_title,
+    .ourteam_title {
+        width: 50vw;
+        text-align: center;
+    }
+
+    .clients_item {
+        width: 100%;
+    }
 
     .form-wrap {
         margin-left: -180px;
@@ -340,6 +372,10 @@
 }
 
 @media screen and (max-width: 415px) {
+    header {
+        margin-bottom: 70px;
+    }
+
     .jumbotron_title {
         font-size: 9vw;
     }
@@ -347,6 +383,7 @@
     .jumbotron_text {
         font-size: 5vw;
         line-height: 30px;
+        margin-bottom: 50px;
     }
 
     .services_mobile,
